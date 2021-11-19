@@ -23,7 +23,7 @@ post
    {
       success
       {
-         mail bcc: "${notificationEmails}"
+         mail bcc: '',body: "${notificationEmails}"
       }
    }
 }
