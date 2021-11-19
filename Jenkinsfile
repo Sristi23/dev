@@ -1,3 +1,4 @@
+def notificationEmails="sarawgisrishti5@gmail.com"
 pipeline{
 
    agent any
@@ -18,5 +19,11 @@ pipeline{
       }
     }
   }
-
+post
+   {
+      success
+      {
+         mail bcc: "${notificationEmails}"
+      }
+   }
 }
