@@ -22,7 +22,7 @@ pipeline{
 post
    {
     always {
-         body: 'A Test EMail', to: '${notificationEmails}', subject: 'Test'
+         body:  to: '${notificationEmails}', subject: 'Test'
     }
    }
 }
