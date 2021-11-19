@@ -21,9 +21,8 @@ pipeline{
   }
 post
    {
-      success
-      {
-         mail bcc: '',body: "${notificationEmails}"
-      }
+    always {
+         body: 'A Test EMail', to: '${notificationEmails}', subject: 'Test'
+    }
    }
 }
