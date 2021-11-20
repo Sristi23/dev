@@ -22,7 +22,9 @@ pipeline{
 post
    {
     always {
-         body: '', to: "${notificationEmails}"
+        mail bcc: '', body: '''Hi Welcome to jenkins email alerts
+        Thanks
+        Srishti''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'sarawgisrishti5@gmail.com'
     }
    }
 }
